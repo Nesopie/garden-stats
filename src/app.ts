@@ -20,6 +20,6 @@ router.get("/summary", (req, res) => {
 
 app.use(router);
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
     return console.log(`Express is listening at http://localhost:${port}`);
 });
